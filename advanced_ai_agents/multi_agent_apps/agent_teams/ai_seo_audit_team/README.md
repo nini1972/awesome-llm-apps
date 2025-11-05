@@ -51,7 +51,7 @@ You will need valid API keys:
 
 Set your environment variables (e.g., add to your shell profile or `export` in your terminal):
 
-```bash
+```basha
 export GOOGLE_API_KEY=your_gemini_key
 export FIRECRAWL_API_KEY=your_firecrawl_key
 ```
@@ -104,3 +104,19 @@ ai_seo_audit_team/
 - Extend the workflow with additional agents (e.g., content brief generator, schema builder) using the shared session state.
 
 Happy auditing! 🚀
+
+
+to stop the server
+
+# Find Python processes
+tasklist | findstr python
+
+# Kill specific Python process
+taskkill /IM python.exe /F
+
+
+# Find process using port 8000
+netstat -ano | findstr :8000
+
+# Kill the process (replace XXXX with actual PID)
+taskkill /PID XXXX /F
